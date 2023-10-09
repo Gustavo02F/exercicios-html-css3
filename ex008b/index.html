@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        body {background-color: cornflowerblue;}
+    </style>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>código-fonte / pré-formatação</h2>
+    <p>O <code>comando document.getElementById('teste')</code> é escrito na linguagem JavaScript.
+        <!--Não é mono-espaçada; não reserva um espaço para cada letra--> </p>
+<!--A tag <code> serve para mono-espaçar as letras. Ótimo para ler códigos, tanto que se chama <code>.-->
+    <pre> <code>
+        num = int(input('Digite um número'))
+         if num% 2== 0:
+            print(f'0 número {num} é PAR')
+        else:
+             print(f'0 número {num} é ÍMPAR)
+        print('FIm do programa')
+    </code>
+    </pre> <!--Tudo colocado entre <pre> é considerado, quebras de linhas e etc.-->
+
+<!--shift + tab puxa os códigos para a esquerda, tab empurra os códigos para a direita.-->
+<h2>Citações Simples</h2>
+<p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--<q> = aspas. essa tag não da apenas forma, mas sentido tbm para o texto.-->
+   
+    <!--Quando for uma citação, use <q></q>. Quando for apenas para chamar atenção para determinada parte do texto ou para algo menos interessante, utilize aspas normal mesmo, sem tag.-->
+
+    <h2>Citações Completas</h2>
+    <p>Segundo Neil Gaiman, no seu livro Coraline:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Coraline/xxLmDwAAQBAJ?hl=pt-BR&gbpv=1&dq=coraline&printsec=frontcover">
+        O apartamento Quatro, onde morávamos, era ótimo, mas um tanto esquisito.
+    </blockquote> <!--Desloca levemente o texto, dando a entender que é uma citação. -->
+    
+    <!--O parametro Cite dentro da tag blocknote, faz o google e os mecanismos de buscas entenderem que vc está se referindo a determinado livro, documento ou qualquer outra mídia textual. Mantém os direitos do criador de tal conteúdo.-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>!</p>
+    <!--<abbr> mostra o significado de uma abreviação quando passado o mouse por cima dela.-->
+
+        <h2>Texto Invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML5</bdo></p>
+<!--se tu escolher o l no bdo, é Left to Right, se tu escolher o r, é Right To Left. Inverte textos, utilizando o rtl. O ltr mostra o texto normalmente-->    
+</body>
+</html>

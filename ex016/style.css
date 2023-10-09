@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+   /* height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #042940, #005C53);
+}
+
+main {
+    background-image: radial-gradient(circle,  #0a5280,  #019284);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #031724a4; /*lado, baixo, espalhar, transparência*/
+    width: 500px;
+    padding: 12px;/*espaçamento das letras até a borda*/
+    margin: auto;
+}
+
+h1 {
+    color: #DBF227; 
+    text-align: center; 
+    text-shadow: 2px 2px 2px #6b7713bd;                   
+}
+
+h2 {
+    color: #9FC131;
+}
+p {
+    text-align: justify;
+}

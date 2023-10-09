@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body { 
+            font-family: monospace;
+            /*save-combination*/
+            /*alguns dispositivos como televisão e celular, tem problemas com fonte, as vezes a fonte que vc escolheu para o teu site n~]ao existe no dispositivo que será aberto, então vc define 3 fontes(que nem acima). O dispositivo que for abrir o site vai buscar sempre a primeira fonte, se ele não achar ele busca a próxima fonte*/
+
+            /*para achar save-combinations boas vai no google e pesquisa "css web safe font combinations"*/
+
+            /*Você pode colocar alguns parâmetros que todo dispositivo vai identificar, como sans-serif, serif, monospace, porque são CATEGORIAS de fontes, então ele vai puxar uma fonte qualquer dessa categoria que tenha no dispositivo*/
+
+            font-size: 1.1em;
+            /*
+            Medidas absolutas
+            cm,mm, in(polegada),px, pt(ponto), pc(paica)
+
+            Medidas Relativas
+            em, ex, rem, vw(viewwidth),vh, %
+            |_Geralmente para medidas de fontes é recomendado pela w3c, o uso do px e em
+                         16px geralmente =1em / nesse caso 13px = 1em*/
+            
+            font-weight: bold;
+            /*lighter  normal  bold   bolder*/
+
+            /*pode usar escalas numéricas que começam no 100 e vai até o 900. A maioria das fontes não tem todas essas escalas. 100=lighter  400=normal bold=700 bolder=800(provavelmente)*/
+
+            font-style: italic;
+            text-decoration: underline;
+
+            }
+              
+        h1 {
+            font: italic bold 2em monospace; 
+            /*font-family     |
+              font-weight     | --Shorthand font(pra fonte)
+              font-size       |
+              font-style      |   
+               
+              font-style -> font-weight -> font-size ->font-family*/
+              /*todas aquelas configurações de cima em apenas um linha / Propriedade shorthand*/}
+
+        h2 {font: bold 1.5em 'Work Sans' ;}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia similique corporis velit voluptatibus sapiente consequatur, deleniti nulla, nemo repellat optio necessitatibus dolorem. Magni harum voluptatum sequi fuga reprehenderit esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vitae atque dolore illum alias mollitia odit, libero nostrum, eum quos animi beatae! Quam saepe laborum, culpa assumenda esse consequuntur in!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi doloribus error expedita, ipsum consectetur quod dolor quos, at fuga quaerat aperiam inventore recusandae cupiditate sed optio! Culpa doloribus nesciunt corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio recusandae quibusdam quaerat fugit eos ipsa corporis magnam eum aliquid, quas odit perferendis sint neque rerum? Vero perspiciatis ipsa fuga dolore?</p>
+
+    <!--Wor Sans é uma fonte que não tem em nenhum dispositivo que vc só consegue colocando este endereço:   na primeira linha do teu css. Ela é uma fonte boa para mexer com o peso dela, fontes simples não dá para mexer com isso.-->
+
+    <!--font-weight= peso da fonte-->
+
+    <!--Não confundir   weight   width   height
+                           |       |       |
+                           |       |       |
+                         Peso    Largura  Altura--> 
+</body>
+</html>

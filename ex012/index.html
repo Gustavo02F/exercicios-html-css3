@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="500" poster="imagens/praias-1200.png" controls autoplay loop>
+        <source src="midia/pexels-lachlan-ross-8775687.mp4" type="video/mp4">
+        <source src="midia/pexels-lachlan-ross-8775687.ogv" type="video/ogv">
+        <source src="midia/Pexels-Lachlan-Ross-8775687.webm" type="video/webm">
+        <source src="midia/Pexels-Lachlan-Ross-8775687.mkv" type="video/mkv"> 
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p> 
+    </video>
+<!-- hospedando vídeos desse modo, com a tag video, podem e vão consumir muito tráfico de dados. Você tem a OBRIGAÇÃO de deixar o seu cliente disso. -->
+
+    <h1>Inserindo vídeos do Youtube </h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Vai no vídeo, incorporar, copia e cola no teu HTML-->
+
+    <!-- frameborder é borda. valor fixo, ou seja, coloca 1 pra ativar e 0 para desativar -->
+
+    <!-- allowfullscreen é para permitir que o vídeo seja colocado em tela cheia  -->
+
+    <!--Incorporando vídeos internos desse jeito o seu cliente não tem gasto algum com dados-->
+
+                        <!--vimeo.com-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/766555009?h=7b59c7be69&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Usando os vídeos do YouTube qualquer um pode ter acesso pelo site, mesmo privando o vídeo no YouTube. Pelo Vimeo vc pode privar para só assinantes poderem ver o vídeo que ta no teu site -->
+
+ 
+</html>

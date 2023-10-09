@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    <style>
+        body {background-color: lightblue;}
+    </style>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+        <p>Você pode acessar o vídeo do Cellbit <a href="https://youtu.be/tQH7eL5SzxI" target="_blank" rel="external">"se não ZERAR portal em 1 HORA perde 1000 REAIS"</a> aqui!</a></p> <!-- o "A" vem de Âncora. -->
+
+        <p>Você també pode acessar o vídeo <a href="https://youtu.be/IBcXv1J4q3M">"alanzoka jogando a demo de Scene Investigators"</a> do Alanzoka aqui!</p>
+        
+    <!--Quando site externo, utilizar do a href target="_blank" e rel(relativo à)="external"-->
+
+    <!-- rel="external: original de fora do teu site e vc quer que esse link tenha um alvo, que é "target="_blank", onde _blank é uma página nova em branco. -->
+    
+<br><hr>
+        <p>Perceba a diferença do primeiro link para o segundo. O primeiro link abre uma nova janela ao clicar no link, o que não faz com que o link não sobreponha o teu site. E o segundo link, é aberto no teu site mesmo, sobreescrevendo ele.</p>
+    <hr>
+    <h2>Usando Links internos</h2>
+    
+    <p>Está é a primeira página do site. Se vc quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página.</a> </p>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p> 
+    
+    <!-- target="_self" é para mostrar que vc quer que o limk abra na mesma aba. Geralmente usa isso quando é um link do teu próprio site, ou você pode simplesmente deixar sem target -->
+<br>   
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/coraline.pdf" download="coraline.pdf" type="application.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livro/coraline.zip" download="coraline.zip" type="application/zip">Livro compactado em ZIP</a></li>
+
+        <!-- Quando vc ainda estiver criando os códigos, coloque uma # no href para mostrar que é um link vazio enquanto vc não adiciona um link -->
+
+        <!-- Alguns navegadores vão apenas abrir o link mas não irão realizar o download do arquivo. Então, você adiciona os comandos download="nome do teu arquivo + extensão" e type="application.pdf(ou seja lá qual for a extensão do teu arquivo" -->
+
+        <!-- Para ver mais media types acessa iana.org/assignments/media-types -->
+    </ul>
+</body>
+</html>
