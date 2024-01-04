@@ -1,0 +1,18 @@
+div{
+    display: inline-block;
+    background-color: #31444b;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 230ms;
+}
+
+div:hover{
+    opacity: 1.8;
+    background-color: #31444b;
+    transition: 230ms;
+}
+

@@ -1,23 +1,62 @@
 
 /*
-    em HTML é id =  em CSS é #
-    em HTML é class =  em CSS é .
+    em HTML é id =  em CSS é # (só pode um elemento por página)
+    em HTML é class =  em CSS é . (pode vários elementos por página)
 */
 
+:root{
+    --cor-background: #6B624C;
+    --cor-h1: #8B8AEB;
+    --cor-h2: #bb4317;
+    --cor-basico: #498d3c;
+    --cor-inter: #9fa547;
+    --cor-avan: #bb4317;
+    --dest-bas: #4a8d3c3f;
+    --dest-inter: #9fa54746;
+    --dest-avan: #bb431738;
+}
+
 body{
-    background: rgb(197, 128, 0);
+    background: #4C4C6B;
     font-family: sans-serif;
 }
 
 h1{
-    color: orangered;
+    color: var(--cor-h1)
 }
 
 h2{
-    color: rgb(247, 86, 28);
+    color: var(--cor-h2)
 }
 
 #principal{
     text-align: center;
-    background: #ac0000;
+    background: var(--cor-background)
+}
+
+.basico{
+    color: var(--cor-basico);
+    font-weight: light;
+}
+
+.intermediario{
+    color: var(--cor-inter);
+    font-weight: light;
+}
+
+.avancado{
+    color: var(--cor-avan);
+    font-weight: light;
+}
+
+.destaqueBa{
+    background: var(--dest-bas);
+}
+
+.destaqueIn{
+    background: var(--dest-inter);
+}
+
+.destaqueAvan{
+    background: var(--dest-avan);
 }
